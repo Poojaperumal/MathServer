@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> mathapp </title>      
+        <style>
+    body{
+        background-color:blue;
+    }
+    h1{
+        background-color:yellow;
+    }
+    form{
+        background-color:orange;
+    }
+    </style>
+    </head >
+    <body>
+        <h1 align="center"> POWER OF BULB </h1>
+        <form align="center" method="POST">
+            {% csrf_token %}
+            Intensity <input name="I" value="{{i}}">
+            <br>
+            <br>
+            Resistance <input name="R" value="{{r}}">
+            <br>
+            <br>
+            <input type="submit" value="calculate">
+            <br>
+            <br>
+            Power <input name="power"value={{power}}>
+        </form>
+        </body> 
+    </html> 
